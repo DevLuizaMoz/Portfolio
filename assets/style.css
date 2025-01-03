@@ -8,7 +8,6 @@
 body {
     min-height: 100vh;
     background-color: #EBE6DF;
-    overflow-x: hidden;
 }
 
 nav {
@@ -41,9 +40,12 @@ nav a {
 nav li:first-child {
     margin-right: auto;
 }
+
 .certificacao {
-    display: flex;
-    justify-content: flex-end;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 .menu-button {
