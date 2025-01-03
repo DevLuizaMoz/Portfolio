@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
     <title>DevLuizaMoz</title>
 </head>
 <body>
     <header class="main-nav">
-        <img src="" alt=""> <!--Adicionar minha foto depois-->
         <nav>
-            <ul>
-                <li><a href="sobre">Sobre</a></li>
-                <li><a href="habilidades">Habilidades profissionais</a></li>
-                <li><a href="trajetoria">Trajetória</a></li>
-                <li><a href="projetos">Projetos</a></li>
-                <li><a href="artigos">Artigos</a></li>
-                <li><a href="contato">Contato</a></li>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="undefined"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades profissionais</a></li>
+                <li><a href="#trajetoria">Trajetória</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#artigos">Artigos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg mlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="undefined"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </nav>
     </header>
+    <section id="luiza">
+        <h2>Olá, meu nome é</h2>
+        <h1>Luiza Moz</h1>
+        <h2>Prazer, fique a vontade para explorar o meu portfolio.</h2>
+        <img src="" alt=""> <!--Adicionar minha foto depois-->
+    </section>
     <section id="sobre">
         <h2>Sobre mim</h2>
-        <p>Um pouco sobre mim</p>
+        <p>Como <strong>desenvolvedora WEB</strong>, minha paixão está em criar <strong>experiências digitais</strong> que sejam tanto <strong>envolventes</strong> quanto <strong>intuitivas</strong>. Atualmente, estou cursando <strong>ciência da computação</strong> na <strong>Faculdade Estácio</strong>, onde desenvolvi habilidades em <strong>programação</strong>, <strong>algoritmos</strong>, <strong>estruturas de dados</strong>, e <strong>banco de dados</strong>, além de adquirir conhecimentos em <strong>desenvolvimento web</strong>, <strong>design de software</strong> e <strong>inteligência artificial</strong>.</p>
+        <p>Embora eu não tenha experiência profissional formal, meus <strong>projetos pessoais</strong> comprovam meu <strong>conhecimento</strong> e <strong>capacidade técnica</strong>.</p>
+        <p>Caso você esteja em busca de alguém que possa oferecer uma <strong>perspectiva renovada</strong> e <strong>habilidades técnicas sólidas</strong> para seus projetos, acredito que minhas <strong>competências</strong> podem <strong>agregar um valor significativo</strong>.</p>
     </section>
 
     <section id="habilidades">
@@ -70,5 +80,6 @@
     <footer>
         <p>&copy; 2024 Luiza Helena Almeida Moz. Todos os direitos reservados.</p>
     </footer>
+    <script src="assets/script.js"></script>
 </body>
 </html>
