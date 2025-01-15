@@ -44,6 +44,7 @@ nav li:first-child {
 .certificacao {
     width: 26px;
     height: 26px;
+    margin-top: 3px;
     margin-right: 10px;
     cursor: pointer;
 }
@@ -84,6 +85,111 @@ nav li:first-child {
     justify-content: flex-end;
 }
 
+section{
+    min-height: 100vh;
+    padding: 5rem 12% 10rem;
+}
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.destaque{
+    color: #177A87;
+}
+.home-content h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+}
+.home-img{
+    margin-left: 50px;
+    border-radius: 50%;
+}
+.home-img img{
+    position: relative;
+    top: 3rem;
+    width: 22vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #5DB9C6;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.home-img img:hover{
+    box-shadow: 0 0 25px #5DB9C6,
+                0 0 50px #5DB9C6,
+                0 0 100px #5DB9C6;
+}
+.home-content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 60rem;
+}
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    border: 2px solid #177A87;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: black;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+.social-icons a:hover{
+    box-shadow: 0 0 25px #177A87;
+    color: white;
+    background-color: #177A87;
+}
+.social-icons a:active{
+    transform: scale(0.96);
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: #177A87;
+   
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: white;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(0.96);
+    box-shadow: 0 0 25px #177A87;
+}
+
+.btn-group{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
 @media(max-width: 400px) {
     .sidebar {
         width: 100%;
