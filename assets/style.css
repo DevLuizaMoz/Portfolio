@@ -1,4 +1,15 @@
-/* Estilos Globais */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+:root{
+    --padrao-text: 'Outfit', sans-serif;
+    --text-destaque: 'Pixelify sans', sans-serif;
+    --color-destaque: #015958;
+    --color-fundo-light: #EBE6DF;
+    --fundo-amostras: #FFFFFF;
+}
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +17,14 @@
 }
 
 body {
+    font-family: var(--padrao-text);
     min-height: 100vh;
-    background-color: #EBE6DF;
+    background-color: var(--color-fundo-light);
 }
 
 nav {
     width: 100%;
-    background-color: white;
+    background-color: var(--fundo-amostras);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     display: flex;
@@ -101,18 +113,33 @@ section{
     gap: 1.5rem;
 }
 .home-content{
+    /*arrumar depois o posicionamento top e left
+    
+    ajeitar a foto tambem*/
+    position: relative;
+    left: -50px;
+    top: -20px;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: flex-start;
     text-align: left;
-    justify-content: center;
-    margin-top: 3rem;
+    justify-content: flex-start;
+    margin: 0;
 }
 .destaque{
-    color: #177A87;
+    color: var(--color-destaque);
+}
+.nome{
+    text-shadow: 2px 2px 0px black;
+    font-family: var(--text-destaque);
+}
+.sobrenome{
+    text-shadow: 2px 2px 0px black;
+    font-family: var(--text-destaque);
+    color: #FFFFFF;
 }
 .home-content h2{
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
@@ -124,13 +151,13 @@ section{
     line-height: 1;
 }
 .home-img{
-    margin-left: 50px;
+    margin-left: 40px;
     border-radius: 50%;
 }
 .home-img img{
     position: relative;
     top: 3rem;
-    width: 22vw;
+    width: 10vw;
     border-radius: 50%;
     box-shadow: 0 0 25px #5DB9C6;
     cursor: pointer;
@@ -154,7 +181,7 @@ section{
     width: 3.8rem;
     height: 3.8rem;
     background: transparent;
-    border: 2px solid #177A87;
+    border: 2px solid var(--color-destaque);
     font-size: 2.5rem;
     border-radius: 50%;
     color: black;
@@ -163,9 +190,9 @@ section{
     text-decoration: none;
 }
 .social-icons a:hover{
-    box-shadow: 0 0 25px #177A87;
+    box-shadow: 0 0 25px var(--color-destaque);
     color: white;
-    background-color: #177A87;
+    background-color: var(--color-destaque);
 }
 .social-icons a:active{
     transform: scale(0.96);
@@ -173,7 +200,7 @@ section{
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
-    background-color: #177A87;
+    background-color: var(--color-destaque);
     border-radius: 4rem;
     font-size: 1.4rem;
     color: white;
@@ -186,7 +213,7 @@ section{
 }
 .btn:hover{
     transform: scale(0.96);
-    box-shadow: 0 0 25px #177A87;
+    box-shadow: 0 0 25px var(--color-destaque);
 }
 
 .btn-group{
