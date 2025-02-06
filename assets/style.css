@@ -20,6 +20,7 @@ body {
     font-family: var(--padrao-text);
     min-height: 100vh;
     background-color: var(--color-fundo-light);
+    overflow-x: hidden;
 }
 
 nav {
@@ -113,8 +114,8 @@ section{
 }
 .fundo_portfolio{
     position: absolute;
-    width: 93vw;
-    height: 93vh;
+    width: 100vw;
+    height: 94vh;
     object-fit: cover;
     z-index: 0;
 }
@@ -151,7 +152,7 @@ section{
     font-size: 8.2vw;
     font-weight: 700;
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     line-height: 1;
 }
 
