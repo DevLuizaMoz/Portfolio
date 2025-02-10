@@ -164,6 +164,7 @@ section{
     max-width: 60rem;
 }
 .social-icons a{
+    cursor: pointer;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -177,13 +178,14 @@ section{
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease-in-out;
     text-decoration: none;
-    cursor: pointer;
 }
+
 .social-icons a:hover{
-    box-shadow: 0 0 25px var(--color-destaque);
+    box-shadow: 0 0 25px var(--color-destaque); 
     color: white;
     background-color: var(--color-destaque);
 }
+
 .social-icons a:active{
     transform: scale(0.96);
 }
