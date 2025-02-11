@@ -281,7 +281,7 @@ section{
     border-radius: 10px;
     height: 35px;
 }
-@media(max-width: 640px) {
+@media(max-width: 768px) {
     .sidebar {
         width: 100%;
     }
@@ -303,7 +303,7 @@ section{
         padding-top: 3px;
         width: 2.3rem;
         height: 2.3rem;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     .btn{
         padding: 0.3rem 1.4rem;
