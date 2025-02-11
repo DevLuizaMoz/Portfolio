@@ -151,7 +151,6 @@ section{
     z-index: 1;
     font-size: 8.2vw;
     font-weight: 700;
-    margin-top: 1.5rem;
     margin-bottom: 1rem;
     line-height: 1;
 }
@@ -272,8 +271,17 @@ section{
     border-radius: 23px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-@media(max-width: 514px) {
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: var(--fundo-amostras);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #015958;
+    border-radius: 10px;
+    height: 35px;
+}
+@media(max-width: 640px) {
     .sidebar {
         width: 100%;
     }
@@ -284,14 +292,15 @@ section{
         font-size: 1.2rem;
     }
     .home-content h1{
-        font-size: 3rem;
+        font-size: 3.2rem;
         text-align: center;
     }
     .home-content p{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         text-align: center;
     }
     .social-icons a{
+        padding-top: 3px;
         width: 2.3rem;
         height: 2.3rem;
         font-size: 1.6rem;
@@ -299,7 +308,7 @@ section{
     .btn{
         padding: 0.3rem 1.4rem;
         border-radius: 4rem;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     #sobre h2{
         font-size: 2.3rem;
