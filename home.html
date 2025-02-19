@@ -4,34 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/LOGO.png" type="image/x-icon">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/style.css">
     <title>DevLuizaMoz</title>
 </head>
 <body>
     <header class="main-nav">
         <nav>
-            <a class="certificacao" href="#"><img src="assets/img/certificate-of-education-outlined-symbol_icon-icons.com_57879.svg" alt="" height="24px" width="24px"></a>
-            <ul class="sidebar">
-                <li class="closed-button" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#habilidades">Habilidades profissionais</a></li>
-                <li><a href="#trajetoria">Trajetória</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#artigos">Artigos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="undefined"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            <div class="nav-container">
+                <a class="nav_certification-icon" href="#"><img src="assets/img/certificate-of-education-outlined-symbol_icon-icons.com_57879.svg" alt="" height="24px" width="24px"></a>
+                <ul class="sidebar">
+                    <li class="nav_closed-button-icon" ><a href="#" onclick="hideSidebar(event)"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades profissionais</a></li>
+                    <li><a href="#trajetoria">Trajetória</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#artigos">Artigos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <li class="nav_menu-button-icon"><a href="#" onclick="showSidebar(event)"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="undefined"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>  
+            </div>
         </nav>
     </header>
-    <section id="home">
+    <section class="home">
         <div class="home-content">
-            <img class="fundo_portfolio" src="assets/img/fundo_portfolio (4).png" alt="">
+            <div class="backgroung_wallpaper-home" ></div>
+
+            <div class="text_home-description">
             <h2>Olá, <span class="destaque" >meu nome é</span></h2>
             <h1><span class="destaque nome">Luiza</span> <span class="sobrenome">Moz</span></h1>
             <p class="destaque" >Desenvolvedora Web</p>
             <p>Prazer, fique a vontade para explorar o meu portfolio.</p>
-
+            </div>
+            
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/luiza-helena-420520202/" target="_blank"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://github.com/DevLuizaMoz" target="_blank"><i class='bx bxl-github'></i></a>
@@ -39,7 +44,7 @@
             </div>
 
             <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
+                <a href="#" class="btn">Currículo</a>
                 <a href="#contact" class="btn">Contato</a>
             </div>
         </div>
@@ -49,6 +54,7 @@
         <h2>Sobre mim</h2>
         <div class="content-p">
             <div class="about-img">
+                <!--tentar adicionar essa imagem pelo css novamente amanhã-->
                 <img src="assets/img/foto_perfil.jpeg" alt="">
             </div>
             <div class="text-container">
