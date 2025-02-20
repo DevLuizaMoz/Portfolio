@@ -24,3 +24,44 @@ document.querySelectorAll('.sidebar a').forEach(link => {
         hideSidebar(event);
     });
 });
+
+function setLoaderPercentage(loaderId, percentageId, value) {
+    const loaderCircle = document.getElementById(loaderId).querySelector('circle');
+    const loaderPercentage = document.getElementById(percentageId);
+    
+    // Limitar o valor entre 0 e 100
+    value = Math.min(Math.max(value, 0), 100);
+    
+    // Calcular o comprimento do traço
+    const circumference = 2 * Math.PI * 45; // 45 é o raio do círculo
+    const offset = circumference - (value / 100) * circumference;
+    
+    // Atualizar o stroke-dashoffset do círculo
+    loaderCircle.style.strokeDasharray = `${circumference}`;
+    loaderCircle.style.strokeDashoffset = `${offset}`;
+    
+    // Atualizar o texto de porcentagem
+    loaderPercentage.textContent = `${value}%`;
+}
+
+function observeLoader(elementId, percentageId, value) {
+    const element = document.getElementById(elementId);
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                setLoaderPercentage(elementId, percentageId, value);
+                observer.unobserve(element);
+            }
+        });
+    });
+
+    observer.observe(element);
+}
+
+// Exemplo de uso: Atualizar os carregadores somente quando o usuário visualizar o elemento
+observeLoader('loader-html-css', 'percentage-html-css', 90);
+observeLoader('loader-js', 'percentage-js', 85);
+observeLoader('loader-python', 'percentage-python', 80);
+
+

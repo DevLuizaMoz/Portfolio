@@ -15,8 +15,8 @@
                 <a class="nav_certification-icon" href="#"><img src="assets/img/certificate-of-education-outlined-symbol_icon-icons.com_57879.svg" alt="" height="24px" width="24px"></a>
                 <ul class="sidebar">
                     <li class="nav_closed-button-icon" ><a href="#" onclick="hideSidebar(event)"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#habilidades">Habilidades profissionais</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#skills">Habilidades profissionais</a></li>
                     <li><a href="#trajetoria">Trajetória</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#artigos">Artigos</a></li>
@@ -45,18 +45,15 @@
 
             <div class="btn-group">
                 <a href="#" class="btn">Currículo</a>
-                <a href="#contact" class="btn">Contato</a>
+                <a href="#contato" class="btn">Contato</a>
             </div>
         </div>
         
     </section>
-    <section id="sobre">
+    <section id="about">
         <h2>Sobre mim</h2>
         <div class="content-p">
-            <div class="about-img">
-                <!--tentar adicionar essa imagem pelo css novamente amanhã-->
-                <img src="assets/img/foto_perfil.jpeg" alt="">
-            </div>
+            <div class="profile_photo-about"></div>
             <div class="text-container">
                 <p>Como <strong>desenvolvedora WEB</strong>, minha paixão está em criar <strong>experiências digitais</strong> que sejam tanto <strong>envolventes</strong> quanto <strong>intuitivas</strong>. Atualmente, estou cursando <strong>ciência da computação</strong> na <strong>Faculdade Estácio</strong>, onde desenvolvi habilidades em <strong>programação</strong>, <strong>algoritmos</strong>, <strong>estruturas de dados</strong>, e <strong>banco de dados</strong>, além de adquirir conhecimentos em <strong>desenvolvimento web</strong>, <strong>design de software</strong> e <strong>inteligência artificial</strong>.</p><br>
                 <p>Embora eu não tenha experiência profissional formal, meus <strong>projetos pessoais</strong> comprovam meu <strong>conhecimento</strong> e <strong>capacidade técnica</strong>.</p><br>
@@ -65,24 +62,47 @@
         </div>
     </section>
     
-    
-
-    <section id="habilidades">
-        <h2>Habilidades profissionais</h2>
-        <ul>
-            <li>Html e Css
-                <p>Competente em utilizar frameworks como Bootstrap e CSS Flexbox/Grid para desenvolver designs que se adaptam perfeitamente a diversos dispositivos e tamanhos de tela, garantindo uma excelente experiência de usuário tanto em dispositivos móveis quanto em desktops.</p>
-                <p>Habilidade em aplicar as últimas tendências de design para criar interfaces visuais atraentes e intuitivas, utilizando cores, tipografia e espaçamento de maneira eficaz para melhorar a estética e a usabilidade dos sites.</p>
-            </li>
-            <li>JavaScript
-                <p>Proficiente em utilizar JavaScript e bibliotecas como jQuery para acessar e modificar elementos da Document Object Model (DOM). Capaz de alterar estilos, atributos, e conteúdos dinamicamente para responder a ações do usuário ou mudanças no estado da aplicação.</p>
-            </li>
-            <li>Python
-                <p>Especialista na criação de scripts eficientes que automatizam tarefas repetitivas e otimizam fluxos de trabalho. Utilização de bibliotecas como os, sys, e argparse para interagir com o sistema operacional, manipular arquivos e processar entradas de linha de comando, criando soluções personalizadas para diversas necessidades.</p>
-                <p>Proficiente em automação de processos complexos utilizando bibliotecas como Selenium para automação de navegadores web, BeautifulSoup para raspagem de dados e pandas para manipulação e análise de dados. Capaz de desenvolver bots e scripts que economizam tempo e reduzem erros humanos, melhorando a eficiência operacional.</p>
-            </li>
-        </ul>
+    <section id="skills">
+        <h2>Habilidades<br>profissionais</h2>
+        <div class="content-skills">
+            <div class="description-skills">
+                <p>Desenvolvedora web especializada em criação de designs responsivos e automação de tarefas, utilizando HTML, CSS, JavaScript e Python.</p>
+            </div>
+            <div class="skill-groups">
+                <ul>
+                    <li>
+                        <div class="circle-container">
+                            <svg class="loader-circle" id="loader-html-css" width="100" height="100">
+                                <circle cx="50" cy="50" r="45" stroke="var(--color-destaque)" stroke-width="10" fill="none" />
+                            </svg>
+                            <div class="skill-percentage" id="percentage-html-css">90%</div>
+                        </div>
+                        <div class="title-skill">Html e Css</div>
+                    </li>
+                    <li>
+                        <div class="circle-container">
+                            <svg class="loader-circle" id="loader-js" width="100" height="100">
+                                <circle cx="50" cy="50" r="45" stroke="var(--color-destaque)" stroke-width="10" fill="none" />
+                            </svg>
+                            <div class="skill-percentage" id="percentage-js">85%</div>
+                        </div>
+                        <div class="title-skill">JavaScript</div>
+                    </li>
+                    <li>
+                        <div class="circle-container">
+                            <svg class="loader-circle" id="loader-python" width="100" height="100">
+                                <circle cx="50" cy="50" r="45" stroke="var(--color-destaque)" stroke-width="10" fill="none" />
+                            </svg>
+                            <div class="skill-percentage" id="percentage-python">80%</div>
+                        </div>
+                        <div class="title-skill">Python</div>
+                    </li>
+                </ul>
+            </div> 
+        </div>
     </section>
+    
+    
     
     <section id="trajetoria">
 
