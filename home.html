@@ -17,7 +17,7 @@
                     <li class="nav_closed-button-icon" ><a href="#" onclick="hideSidebar(event)"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="#skills">Habilidades profissionais</a></li>
-                    <li><a href="#trajetoria">Trajetória</a></li>
+                    <li><a href="#trajectory">Trajetória</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#artigos">Artigos</a></li>
                     <li><a href="#contato">Contato</a></li>
@@ -69,10 +69,10 @@
                 <p>Desenvolvedora web especializada em criação de designs responsivos e automação de tarefas, utilizando HTML, CSS, JavaScript e Python.</p>
             </div>
             <div class="skill-groups">
-                <ul>
+                <ul class="carousel">
                     <li>
                         <div class="circle-container">
-                            <svg class="loader-circle" id="loader-html-css" width="100" height="100">
+                            <svg class="loader-circle" id="loader-html-css" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
                                 <circle cx="50" cy="50" r="45" stroke="var(--color-destaque)" stroke-width="10" fill="none" />
                             </svg>
                             <div class="skill-percentage" id="percentage-html-css">90%</div>
@@ -81,7 +81,7 @@
                     </li>
                     <li>
                         <div class="circle-container">
-                            <svg class="loader-circle" id="loader-js" width="100" height="100">
+                            <svg class="loader-circle" id="loader-js" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
                                 <circle cx="50" cy="50" r="45" stroke="var(--color-destaque)" stroke-width="10" fill="none" />
                             </svg>
                             <div class="skill-percentage" id="percentage-js">85%</div>
@@ -90,7 +90,7 @@
                     </li>
                     <li>
                         <div class="circle-container">
-                            <svg class="loader-circle" id="loader-python" width="100" height="100">
+                            <svg class="loader-circle" id="loader-python" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
                                 <circle cx="50" cy="50" r="45" stroke="var(--color-destaque)" stroke-width="10" fill="none" />
                             </svg>
                             <div class="skill-percentage" id="percentage-python">80%</div>
@@ -98,22 +98,112 @@
                         <div class="title-skill">Python</div>
                     </li>
                 </ul>
-            </div> 
+            </div>
         </div>
     </section>
     
-    
-    
-    <section id="trajetoria">
-
+    <section id="trajectory">
+        <div class="page-wrapper">
+            <div class="section-timeline-heading">
+                <div class="container">
+                    <div class="padding-vertical-xlarge">
+                        <div class="timeline-main_heading-wrapper">
+                            <div class="margin-bottom-medium">
+                                <h2 class="paragraph-trajectory">Trajetória</h2>
+                            </div>
+                            <p class="paragraph-large">Minha trajetória até o presente momento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-timeline">
+                <div class="container">
+                    <div class="timeline_component">
+                        <div class="timeline_progress">
+                            <div class="timeline_progress-bar"></div>
+                        </div>
+                        <div class="timeline_item">
+                            <div class="timeline_left">
+                                <div class="timeline_date-text">Dezembro de 2022</div>
+                            </div>
+                            <div class="timeline_centre">
+                                <div class="timeline_circle"></div>
+                            </div>
+                            <div class="timeline_right">
+                                <div class="margin-bottom-xlarge">
+                                    <div class="timeline_text">
+                                        Conclusão do Ensino Médio na Etec de Itanhaém
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline_item">
+                            <div class="timeline_left">
+                                <div class="timeline_date-text">Janeiro de 2024</div>
+                            </div>
+                            <div class="timeline_centre">
+                                <div class="timeline_circle"></div>
+                            </div>
+                            <div class="timeline_right">
+                                <div class="margin-bottom-medium">
+                                    <div class="timeline_text">HTML e CSS pelo Curso em Vídeo</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline_item">
+                            <div class="timeline_left">
+                                <div class="timeline_date-text">Agosto de 2024</div>
+                            </div>
+                            <div class="timeline_centre">
+                                <div class="timeline_circle"></div>
+                            </div>
+                            <div class="timeline_right">
+                                <div class="margin-bottom-medium">
+                                    <div class="timeline_text">Bacharelado em Ciência da Computação, Estácio de Sá, com término previsto para o Primeiro Semestre de 2028</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline_item">
+                            <div class="timeline_left">
+                                <div class="timeline_date-text">Outubro de 2024</div>
+                            </div>
+                            <div class="timeline_centre">
+                                <div class="timeline_circle"></div>
+                            </div>
+                            <div class="timeline_right">
+                                <div class="margin-bottom-medium">
+                                    <div class="timeline_text">JavaScript pelo Curso em Vídeo</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline_item">
+                            <div class="timeline_left">
+                                <div class="timeline_date-text">Dezembro 2024</div>
+                            </div>
+                            <div class="timeline_centre">
+                                <div class="timeline_circle"></div>
+                            </div>
+                            <div class="timeline_right">
+                                <div class="margin-bottom-medium">
+                                    <div class="timeline_text">Python pelo Curso em Vídeo</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overlay-fade-top"></div>
+                        <div class="overlay-fade-bottom"></div>
+                    </div>
+                </div>
+                <div style="height: 100vh;"></div>
+            </div>
+        </div>
     </section>
+    
     
     <section id="projetos">
 
     </section>
     
     <section id="artigos">
-
     
     </section>
     <section id="contato">
@@ -123,7 +213,7 @@
                 <p>Itanhaém, São Paulo, Brasil</p>
             </li>
             <li>Email
-                <p>luhealmo.moz@gmail.moz</p>
+                <p>luhealmo.dev@gmail.moz</p>
             </li>
             <li>Freelance
                 <p>Disponível agora</p>
