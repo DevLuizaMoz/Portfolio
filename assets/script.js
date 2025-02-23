@@ -63,3 +63,29 @@ function observeLoader(elementId, percentageId, value) {
 observeLoader('loader-html-css', 'percentage-html-css', 90);
 observeLoader('loader-js', 'percentage-js', 85);
 observeLoader('loader-python', 'percentage-python', 80);
+
+
+
+// script.js
+
+// Seleciona a barra de progresso e a div pai
+const progressBar = document.querySelector('.timeline_progress-bar'); // Seletor da barra de progresso
+const parentDiv = document.querySelector('.mostra-linha'); // Seletor da div pai
+
+// Cria um observador de interseção
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Adiciona a classe 'visible' à barra de progresso quando a div pai é visualizada
+            progressBar.classList.add('visible');
+            console.log('Div pai visível: classe "visible" adicionada à barra de progresso.');
+        } else {
+            // Remove a classe 'visible' da barra de progresso quando a div pai não é mais visualizada
+            progressBar.classList.remove('visible');
+            console.log('Div pai invisível: classe "visible" removida da barra de progresso.');
+        }
+    });
+});
+
+// Inicia a observação da div pai
+observer.observe(parentDiv);

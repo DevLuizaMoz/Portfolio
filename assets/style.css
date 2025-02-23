@@ -515,26 +515,39 @@ section{
     top: 50vh;
     box-shadow: 0 0 0 5px var(--color-destaque);
 }
-.timeline_progress {
-    z-index: -2;
-    background-color: #414141;
-    width: 3px;
-    height: 100%;
-    position: absolute;
-}
-/*código do cara*/
+
+
+
+
 .timeline_progress-bar {
-    z-index: -1;
+    z-index: 1000; /* Mantenha um z-index positivo */
     background: #015958;
     background: -webkit-linear-gradient(to bottom, #015958, #009e9b, white);
-    background: linear-gradient(to bottom, #015958,  #009e9b,white);
+    background: linear-gradient(to bottom, #015958,  #009e9b, white);
 
     width: 3px;
     height: 50vh;
     border-radius: 50%;
     position: fixed;
     inset: 0 auto 50vh;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Transição suave para a opacidade */
 }
+
+.timeline_progress-bar.visible {
+    opacity: 1; /* Torna a barra visível quando a classe 'visible' é adicionada */
+    background-color: red; /* Define a cor vermelha quando visível */
+}
+
+.timeline_progress {
+    z-index: 0; /* Mantenha um z-index menor que a barra vermelha */
+    background-color: #414141;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+}
+
+
 /*código do blackBox*/
 /*
 .timeline_progress-bar {
