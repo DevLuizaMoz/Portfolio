@@ -293,7 +293,7 @@ section{
     background-size: cover;
     background-position: center;
     flex-shrink: 0;
-    border-radius: 13px; 
+    border-radius: 18px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
@@ -431,7 +431,7 @@ section{
 }
 .container {
     width: 90vw;
-    max-width: 1360px;
+    /*max-width: 1360px;*/
     margin-left: auto;
     margin-right: auto;
 }
@@ -442,14 +442,11 @@ section{
     letter-spacing: -0.02em;
     font-size: 18px;
 }
-.section-timeline-heading {
-    background-color: var(--color-fundo-light);
-}
 .padding-vertical-xlarge {
-    padding-top: 120px;
     padding-bottom: 120px;
 }
 .timeline-main_heading-wrapper {
+    padding-top: 50px;
     color: black;
     text-align: center;
     max-width: 640px;
@@ -515,28 +512,15 @@ section{
     top: 50vh;
     box-shadow: 0 0 0 5px var(--color-destaque);
 }
-
-
-
-
 .timeline_progress-bar {
-    z-index: 1000; /* Mantenha um z-index positivo */
-    background: #015958;
-    background: -webkit-linear-gradient(to bottom, #015958, #009e9b, white);
-    background: linear-gradient(to bottom, #015958,  #009e9b, white);
-
+    z-index: -1;
+    background: linear-gradient(to bottom, #015958,  #009e9b);
     width: 3px;
-    height: 50vh;
-    border-radius: 50%;
-    position: fixed;
-    inset: 0 auto 50vh;
-    opacity: 0; /* Inicialmente invisível */
-    transition: opacity 0.3s ease; /* Transição suave para a opacidade */
-}
-
-.timeline_progress-bar.visible {
-    opacity: 1; /* Torna a barra visível quando a classe 'visible' é adicionada */
-    background-color: red; /* Define a cor vermelha quando visível */
+    height: 100%; 
+    position: absolute;
+    top: 0; 
+    left: 50%;
+    transform: translateX(-50%); 
 }
 
 .timeline_progress {
@@ -546,22 +530,6 @@ section{
     height: 100%;
     position: absolute;
 }
-
-
-/*código do blackBox*/
-/*
-.timeline_progress-bar {
-    z-index: -1;
-    background: #015958;
-    background: -webkit-linear-gradient(to bottom, #015958, #009e9b);
-    background: linear-gradient(to bottom, #015958,  #009e9b);
-    width: 3px;
-    height: 100%; 
-    position: absolute;
-    top: 0; 
-    left: 50%;
-    transform: translateX(-50%); 
-*/
 
 .section-timeline {
     z-index: -3;
