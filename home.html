@@ -15,7 +15,7 @@
             <div class="nav-container">
                 <a class="nav_certification-icon" href="#"><img src="assets/img/certificate-of-education-outlined-symbol_icon-icons.com_57879.svg" alt="" height="24px" width="24px"></a>
                 <ul class="sidebar">
-                    <li class="nav_closed-button-icon" ><a href="#" onclick="hideSidebar(event)"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li class="nav_closed-button-icon" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="#skills">Habilidades profissionais</a></li>
                     <li><a href="#trajectory">Trajetória</a></li>
@@ -216,18 +216,16 @@
                   <div class="overlay-fade-bottom"></div>
                 </div>
               </div>
-              <div style="height: 50vh;"></div>
             </div>
           </div>
     </section>    
 <!--PARA FAZER AMANHÃ
 
-editar o css da section projects
-
-editar a parte de projects info
+arrumar o botão para telas pequenas:  ao clicar na div .banner_item-projects, a div .project-info apareça, e ao clicar no botão .closed_button_icon-projects, a div .project-info seja fechada
 
 mexer na responsividade
 -->
+
     <section id="projects">  
       <div class="content-projects">
           <div class="title-projects">
@@ -241,34 +239,92 @@ mexer na responsividade
       <div class="swiper-container carousel_slider-projects">
           <div class="swiper-wrapper">
               <div class="swiper-slide banner_item-projects project1">
-                  <a href="#" class="project-link">
-                      <div class="project-info">Informações do Projeto 1<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  </a>
+                    <div class="project-info">
+                      <li class="closed_button_icon-projects" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                      <div class="video-container">
+                        <iframe width="400" height="200" src="https://www.youtube.com/embed/IWVJq-4zW24?si=nJqUytyI6GQMDPZ9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      </div>
+                      <div class="container_text-projects">
+                          <h2>Título: </h2>
+                          <h3>Objetivo</h3>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, neque, ab qui at amet, deleniti facere aliquid laboriosam alias molestiae magni perspiciatis fugiat odio aut quia deserunt minima numquam quae.</p>
+                          <h3>Linguagens utilizadas</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          <h3>Link do site: <a href="#"></a></h3>
+                          <h4>Acesse o meu GitHub para mais detalhes</h4>
+                          <a class="icon_git-projects" href="https://github.com/DevLuizaMoz" target="_blank"><i class='bx bxl-github'></i></a>
+                        </div>
+                      </div>
               </div>
               <div class="swiper-slide banner_item-projects project2">
-                  <a href="#" class="project-link">
-                      <div class="project-info">Informações do Projeto 2<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  </a>
+                <div class="project-info">
+                  <div class="video-container">
+                    <iframe width="400" height="200" src="https://www.youtube.com/embed/IWVJq-4zW24?si=nJqUytyI6GQMDPZ9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <h2>Título: </h2>
+                  <h3>Objetivo</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, neque, ab qui at amet, deleniti facere aliquid laboriosam alias molestiae magni perspiciatis fugiat odio aut quia deserunt minima numquam quae.</p>
+                  <h3>Linguagens utilizadas</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <h4>Acesse o meu GitHub para mais detalhes</h4>
+                  <a class="icon_git-projects" href="https://github.com/DevLuizaMoz" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
               </div>
               <div class="swiper-slide banner_item-projects project3">
-                  <a href="#" class="project-link">
-                      <div class="project-info">Informações do Projeto 3<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  </a>
+                <div class="project-info">
+                  <div class="video-container">
+                    <iframe width="400" height="200" src="https://www.youtube.com/embed/IWVJq-4zW24?si=nJqUytyI6GQMDPZ9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <h2>Título: </h2>
+                  <h3>Objetivo</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, neque, ab qui at amet, deleniti facere aliquid laboriosam alias molestiae magni perspiciatis fugiat odio aut quia deserunt minima numquam quae.</p>
+                  <h3>Linguagens utilizadas</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <h4>Acesse o meu GitHub para mais detalhes</h4>
+                  <a class="icon_git-projects" href="https://github.com/DevLuizaMoz" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
               </div>
               <div class="swiper-slide banner_item-projects project4">
-                  <a href="#" class="project-link">
-                      <div class="project-info">Informações do Projeto 4<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  </a>
+                <div class="project-info">
+                  <div class="video-container">
+                    <iframe width="400" height="200" src="https://www.youtube.com/embed/IWVJq-4zW24?si=nJqUytyI6GQMDPZ9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <h2>Título: </h2>
+                  <h3>Objetivo</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, neque, ab qui at amet, deleniti facere aliquid laboriosam alias molestiae magni perspiciatis fugiat odio aut quia deserunt minima numquam quae.</p>
+                  <h3>Linguagens utilizadas</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <h4>Acesse o meu GitHub para mais detalhes</h4>
+                  <a class="icon_git-projects" href="https://github.com/DevLuizaMoz" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
               </div>
               <div class="swiper-slide banner_item-projects project5">
-                  <a href="#" class="project-link">
-                      <div class="project-info">Informações do Projeto 5<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  </a>
+                <div class="project-info">
+                  <div class="video-container">
+                    <iframe width="400" height="200" src="https://www.youtube.com/embed/IWVJq-4zW24?si=nJqUytyI6GQMDPZ9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <h2>Título: </h2>
+                  <h3>Objetivo</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, neque, ab qui at amet, deleniti facere aliquid laboriosam alias molestiae magni perspiciatis fugiat odio aut quia deserunt minima numquam quae.</p>
+                  <h3>Linguagens utilizadas</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <h4>Acesse o meu GitHub para mais detalhes</h4>
+                  <a class="icon_git-projects" href="https://github.com/DevLuizaMoz" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
               </div>
               <div class="swiper-slide banner_item-projects project6">
-                  <a href="#" class="project-link">
-                      <div class="project-info">Informações do Projeto 6<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  </a>
+                <div class="project-info">
+                  <div class="video-container">
+                    <iframe width="400" height="200" src="https://www.youtube.com/embed/IWVJq-4zW24?si=nJqUytyI6GQMDPZ9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <h2>Título: </h2>
+                  <h3>Objetivo</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, neque, ab qui at amet, deleniti facere aliquid laboriosam alias molestiae magni perspiciatis fugiat odio aut quia deserunt minima numquam quae.</p>
+                  <h3>Linguagens utilizadas</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <h4>Acesse o meu GitHub para mais detalhes</h4>
+                  <a class="icon_git-projects" href="https://github.com/DevLuizaMoz" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
               </div>
           </div>
           <div class="swiper-button-next"></div>
@@ -300,21 +356,6 @@ mexer na responsividade
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            loop: true,
-        });
-    </script>
     <script src="assets/script.js"></script>
 </body>
 </html>
