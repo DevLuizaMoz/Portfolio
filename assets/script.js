@@ -62,30 +62,5 @@ observeLoader('loader-html-css', 'percentage-html-css', 90);
 observeLoader('loader-js', 'percentage-js', 85);
 observeLoader('loader-python', 'percentage-python', 80);
 
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    loop: true,
-});
 
-// Adiciona um evento de mouse sobre os slides
-document.querySelectorAll('.banner_item-projects').forEach(slide => {
-    slide.addEventListener('mouseenter', function() {
-        document.querySelector('.swiper-pagination').style.opacity = '0';
-        document.querySelector('.swiper-pagination').style.pointerEvents = 'none';
-    });
-
-    slide.addEventListener('mouseleave', function() {
-        document.querySelector('.swiper-pagination').style.opacity = '1';
-        document.querySelector('.swiper-pagination').style.pointerEvents = 'auto';
-    });
-});
 
