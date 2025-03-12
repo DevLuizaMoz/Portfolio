@@ -28,6 +28,7 @@ body {
     min-height: 100vh; 
     background-color: var(--color-fundo-light); 
     overflow-x: hidden; 
+    scroll-behavior: smooth;
 }
 
 nav { 
@@ -666,13 +667,109 @@ section{
     cursor: pointer;
     color: white;
 }
+.languages-projects{
+    width: 48px;
+    height: 48px;
+}
 .icon-projects img {
     filter: brightness(0) invert(1); 
 }
 .video-link_projects{
     display: flex;
 }
-
+/*fazer a responsividade*/
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.form-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background-color: #FFFFFF;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+#contact h2{
+    font-family: var(--text-destaque);
+    width: 100%;
+    font-size: 3.2rem;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-right: 10px;
+    color: var(--text-color-destaque);
+    text-shadow: 2px 2px 0px black;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.label-contact{
+    color: #013f3e;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.input-contact{
+    background-color: #096d6b5d;
+    font-size: 14.5px;
+    padding: 9px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: all 0.5s;
+}
+.input-contact:focus {
+    border-radius: 25px;
+    outline: 2px solid #009391;
+}
+.input-contact::placeholder {
+    font-family: var(--padrao-text);
+    color: #292929b6;
+}
+.textarea-contact{
+    background-color: #096d6b5d;
+    font-size: 14.5px;
+    padding: 9px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+.textarea-contact:focus{
+    border-radius: 16px;
+    outline: 2px solid #009391;
+}
+.textarea-contact::placeholder{
+    font-family: var(--padrao-text);
+    color: #292929b6;
+}
+.btn-contact{
+    padding: 9px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid #009391;
+    border-radius: 5px;
+    color: #013f3e;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+.btn-contact:hover{
+    color: #001b1b;
+    border-radius: 25px;
+    background-color: #009391;
+}
 
 @media screen and (max-width: 768px) { 
     .sidebar { 
@@ -878,6 +975,73 @@ section{
     .paragraph-projects{
         font-size: 15.6px;
         margin-top: 20px;
+    }
+    .project-info{
+        width: 255px;
+        height: 280px;
+        overflow-y: scroll;
+    }
+    .project-info::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    .project-info::-webkit-scrollbar-track {
+        background-color: #FFFFFF; 
+    }
+    
+    .project-info::-webkit-scrollbar-thumb {
+        background-color: var(--color-destaque);
+        border-radius: 10px; 
+    }
+    .project-info h2{
+        font-family: var(--padrao-text);
+        font-size: 17px;
+        color: #000;
+        padding: 5px;
+        text-align: center;
+    }
+    .project-info p{
+        font-family: var(--padrao-text);
+        font-size: 14.5px;
+        color: #000;
+        padding: 7px 10px 10px;
+        text-align: justify;
+    }
+    .project-info h3{
+        color: #000;
+        font-family: var(--padrao-text);
+        font-size: 16px;
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+    .project-info h4{
+        font-size: 14px;
+        padding: 20px 10px;
+        text-align: center;
+    }
+    .icon-projects {
+        background-color: #015958;
+        height: 39px;
+        width: 39px;
+        border-radius: 50%;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        font-size: 1.8rem;
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+    }
+    .languages-projects{
+        width: 40px;
+        height: 40px;
+    }
+    .project-item{
+        width: 255px;
+    }
+    .banner_item-projects{
+        width: 255px;
+        height: 150px;
     }
 }
 

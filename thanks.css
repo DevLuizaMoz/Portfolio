@@ -1,0 +1,51 @@
+:root{ 
+    --padrao-text: 'Outfit', sans-serif; 
+    --text-destaque: 'Pixelify sans', sans-serif; 
+    --color-destaque: #015958; 
+    --text-color-destaque: #008381;
+    --color-fundo-light: #EBE6DF; 
+    --fundo-amostras: #FFFFFF; 
+} 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--padrao-text); 
+    min-height: 100vh; 
+    background-color: var(--color-fundo-light); 
+    flex-direction: column;
+}
+.text{
+    font-size: 45px;
+    color: #015958;
+    margin-bottom: 30px;
+}
+.paragraph{
+    font-size: 21px;
+    color: #015958;
+    margin-bottom: 50px;
+}
+.btn{
+    background-color: transparent;
+    color: #015958;
+    padding: 10px 45px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #009391;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btn:hover{
+    background-color: #009391;
+    color: #001b1b;
+    border-radius: 25px;
+}
+
+
+/*mexer na responsividade*/
