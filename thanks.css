@@ -20,6 +20,15 @@
     background-color: var(--color-fundo-light); 
     flex-direction: column;
 }
+.background_wallpaper-thanks{
+    background-image: url(assets/img/fundo_portfolio\ \(4\).png);
+    width: 100vw; 
+    height: 100vh;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
 .text{
     font-size: 45px;
     color: #015958;
@@ -32,20 +41,31 @@
 }
 .btn{
     background-color: transparent;
+    font-size: 16px;
     color: #015958;
     padding: 10px 45px;
     text-decoration: none;
     border-radius: 5px;
     border: 2px solid #009391;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.5s;
 }
 .btn:hover{
     background-color: #009391;
-    color: #001b1b;
+    color: #ffffff;
     border-radius: 25px;
 }
-
+@media (max-width:768px){
+    .text{
+        font-size: 28px;
+    }
+    .paragraph{
+        font-size: 18px;
+    }
+    .btn{
+        font-size: 14.7px;
+    }
+}
 
 /*mexer na responsividade*/

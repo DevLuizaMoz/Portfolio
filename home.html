@@ -10,12 +10,25 @@
     <title>DevLuizaMoz</title>
 </head>
 <body>
+
+  <!--PARA FAZER!!!!
+  
+  * fazer um curriculo
+
+  * fazer o botão de DARK e LIGTH
+
+  *fazer a página de certificado
+  
+  -->
+  
     <header class="main-nav">
         <nav>
             <div class="nav-container">
-                <a class="nav_certification-icon" href="#"><img src="assets/img/certificate-of-education-outlined-symbol_icon-icons.com_57879.svg" alt="" height="24px" width="24px"></a>
+              <!--adicionar certificações-->
+                <a class="nav_certification-icon" href="#"><img src="assets/img/certificate-of-education-outlined-symbol_icon-icons.com_57879.svg" alt="" height="24px" width="24px" title="Certificação"></a>
                 <ul class="sidebar">
                     <li class="nav_closed-button-icon" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="#skills">Habilidades profissionais</a></li>
                     <li><a href="#trajectory">Trajetória</a></li>
@@ -27,14 +40,14 @@
             </div>
         </nav>
     </header>
-    <section class="home">
+    <section id="home">
         <div class="home-content">
             <div class="backgroung_wallpaper-home" ></div>
 
             <div class="text_home-description">
             <h2>Olá, <span class="destaque" >meu nome é</span></h2>
             <h1><span class="destaque nome">Luiza</span> <span class="sobrenome">Moz</span></h1>
-            <p class="destaque" >Desenvolvedora Web</p>
+            <p class="destaque">Desenvolvedora Web</p>
             <p>Prazer, fique a vontade para explorar o meu portfolio.</p>
             </div>
             
@@ -45,7 +58,8 @@
             </div>
 
             <div class="btn-group">
-                <a href="#" class="btn">Currículo</a>
+              <!--Adicionar curriculo-->
+                <a href="#" class="btn" download title="Baixar PDF">Currículo</a>
                 <a href="#contact" class="btn">Contato</a>
             </div>
         </div>
@@ -395,17 +409,6 @@
 </div>
     </section>
 
-
-    
-<!--PARA FAZER AMANHÃ
-
-mexer na responsividade para celulares e deixar parecido ao vídeo do celular
-
-talvez botão de ver mais
-  -->
-    <!--<section id="artigos">
-    
-    </section>-->
     <section id="contact">
       <h2>Vamos trabalhar juntos?</h2>
       <div class="form-contact">
@@ -422,25 +425,31 @@ talvez botão de ver mais
           <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/thanks.html">
         </form>
       </div>
-        
-        
     </section>
+
     <footer>
-        <p>&copy; 2024 Luiza Helena Almeida Moz. Todos os direitos reservados.</p>
-    </footer>
-<ul>
-            <li>Endereço
-                <p>Itanhaém, São Paulo, Brasil</p>
-            </li>
-            <li>Email
-                <p>luhealmo.dev@gmail.moz</p>
-            </li>
-            <li>Freelance
-                <p>Disponível agora</p>
-            </li>
+      <div class="container-footer">
+        <div class="footer-content">
+          <h3>Contate-me</h3>
+          <p>Freelance: Disponível agora</p>
+          <p>Email: luhealmo.dev@gmail.moz</p>
+          <p>Endereço: Itanhaém, São Paulo, Brasil</p>
+      </div>
+      <div class="footer-content">
+        <h3>Me siga</h3>
+        <ul class="social_icons-footer">
+          <li><a href="https://www.instagram.com/_luhealmo_/" class="bx bxl-instagram-alt"></a></li>
+        <li><a href="https://www.linkedin.com/in/luiza-helena-420520202/" class="bx bxl-linkedin"></a></li>
+        <li><a href="https://github.com/DevLuizaMoz" class="bx bxl-github"></a></li>
         </ul>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
+      </div>
+      </div>
+      <div class="bottom_bar-footer">
+        <p>&copy; 2025 Luiza Helena Almeida Moz. Todos os direitos reservados.</p>
+      </div>
+        
+    </footer>
+
     <script src="assets/script.js"></script>
 </body>
 </html>
