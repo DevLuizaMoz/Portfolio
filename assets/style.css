@@ -65,21 +65,11 @@ nav a {
     align-items: center; 
     color: black; 
 } 
-nav li:first-child { 
-    margin-right: auto; 
-} 
-.nav_certification-icon { 
-    margin-left: auto;
-    width: 26px; 
-    height: 26px; 
-    margin-top: 3px; 
-    margin-right: 10px; 
-    cursor: pointer; 
-} 
 .nav_menu-button-icon { 
     display: flex; 
     align-items: center; 
-    justify-content: center; 
+    justify-content: center;
+    margin-left: auto; 
 } 
 .sidebar { 
     position: fixed; 
@@ -128,9 +118,8 @@ nav li:first-child {
 } 
 section{ 
     width: 100%;
-    min-height: 100vh;
-    padding: 3rem 4rem;
-    margin: 0 auto;
+    padding: 1rem;
+    margin: 55px auto;
     display: block;
 } 
 #home{ 
@@ -138,7 +127,7 @@ section{
     align-items: center; 
     justify-content: center;
     width: 100%;
-} 
+}
 .text_home-description{
     display: flex;
     flex-direction: column;
@@ -254,6 +243,7 @@ section{
     justify-content: center;
     flex-direction: column; 
     align-items: center;
+    margin-top: 80px;
 } 
 #about h2 { 
     font-family: var(--text-destaque); 
@@ -318,6 +308,7 @@ section{
     justify-content: center;
     flex-direction: column;
     width: 100vw;
+    padding: 2rem 0;
 }
 #skills h2 {
     font-family: var(--text-destaque); 
@@ -325,23 +316,22 @@ section{
     font-size: 3.2rem; 
     letter-spacing: 10px; 
     text-align: center; 
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
     color: var(--text-color-destaque);
     text-shadow: 2px 2px 0px black;
 }
 .content-skills {
     max-width: 100vw; 
-    max-height: 350px; 
     border-radius: 15px; 
-    padding: 15px;
+    padding: 10px;
 }
 .description-skills {
     font-size: 16.5px;  
     line-height: 25px;  
     flex-grow: 1;
     text-align: center;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
 }
 .skill-groups {
     display: flex;
