@@ -17,6 +17,7 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; 
 }
 body { 
     font-family: var(--padrao-text);
@@ -269,8 +270,7 @@ section{
     justify-content: center;
     flex-direction: column; 
     align-items: center;
-    width: 90%;
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
     border-radius: 15px;
     overflow: hidden; 
@@ -893,8 +893,6 @@ footer h3{
         letter-spacing: 5px;
     } 
     .content-p {
-        width: 100%;
-        max-width: 500px; 
         display: flex;
         flex-direction: column;
         justify-content: center;
