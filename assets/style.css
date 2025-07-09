@@ -318,7 +318,6 @@ section{
     justify-content: center;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
 }
 #skills h2 {
     font-family: var(--text-destaque); 
@@ -355,7 +354,6 @@ section{
     display: flex;
     justify-content: flex-start;
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
 }
 .carousel li {
     scroll-snap-align: start;
@@ -363,8 +361,8 @@ section{
 }
 .circle-container {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -397,6 +395,7 @@ section{
     margin: 10px;
     text-align: center;
 }
+
 #trajectory { 
     display: flex; 
     flex-direction: column; 
@@ -916,26 +915,24 @@ footer h3{
         align-items: center;
     }
     #skills h2 {
-        font-size: 2.5rem;
-        margin-top: 55px;
-    }
-    .content-skills {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        font-size: 2rem;
+        margin-top: 35px;
     }
     .description-skills {
-        text-align: center;
+        font-size: 15.5px; 
     }
-    .skill-groups {
-        display: flex;
-        justify-content: center;
-        width: 100%;
+    .circle-container {
+        width: 90px;
+        height: 90px;
+        margin: 15px;
+    }
+    .skill-percentage {
+        font-size: 1em;
     }
     .title-skill {
-        text-align: center;
+        font-size: 15px;
     }
+
     .paragraph-trajectory {
         font-size: 2.7rem;
         margin-top: 55px;
