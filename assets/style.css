@@ -780,8 +780,11 @@ section{
 .form-container {
     position: relative;
     perspective: 1200px;
-    width: 410px;
+    width: 380px;
     height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .form-contact, .thank-you-message {
     position: absolute;
@@ -836,6 +839,7 @@ section{
     border-radius: 25px;
     background-color: #009391;
 }
+
 footer{
     border-radius: 50px 50px 0px 0px;
     background-color: #015958;
