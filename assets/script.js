@@ -73,3 +73,46 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const contactForm = document.getElementById('contactForm');
+  const formContainer = document.querySelector('.form-container');
+  const backBtn = document.getElementById('backBtn');
+  
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Mostra que está carregando (opcional)
+    const submitBtn = this.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
+    
+    // Envia o formulário via AJAX
+    fetch(this.action, {
+      method: this.method,
+      body: new FormData(this)
+    })
+    .then(response => {
+      if (response.ok) {
+        // Roda a animação se o envio for bem-sucedido
+        formContainer.classList.add('flipped');
+      } else {
+        throw new Error('Erro no envio');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
+    })
+    .finally(() => {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Enviar';
+    });
+  });
+  
+  // Botão para voltar ao formulário
+  backBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    formContainer.classList.remove('flipped');
+  });
+});
