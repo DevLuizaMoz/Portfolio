@@ -81,20 +81,16 @@ document.addEventListener('DOMContentLoaded', function() {
   
   contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    
-    // Mostra que está carregando (opcional)
     const submitBtn = this.querySelector('button[type="submit"]');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Enviando...';
-    
-    // Envia o formulário via AJAX
+
     fetch(this.action, {
       method: this.method,
       body: new FormData(this)
     })
     .then(response => {
       if (response.ok) {
-        // Roda a animação se o envio for bem-sucedido
         formContainer.classList.add('flipped');
       } else {
         throw new Error('Erro no envio');
@@ -109,8 +105,6 @@ document.addEventListener('DOMContentLoaded', function() {
       submitBtn.textContent = 'Enviar';
     });
   });
-  
-  // Botão para voltar ao formulário
   backBtn.addEventListener('click', function(e) {
     e.preventDefault();
     formContainer.classList.remove('flipped');
