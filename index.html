@@ -12,28 +12,10 @@
 <body>
 
   <!--PARA FAZER!!!!
-  
-  * fazer um curriculo
 
   * fazer o botão de DARK e LIGTH (depois)
 
   * fazer a página de certificado (depois)
-
-  FAZER AMANHÃ:
-
-  arrumar o tamanho das letras
-  
-  arrumar parte de enviar email:
-          ao inves de carregar uma outra pagina, carregar uma div do mesmo tamanho da div de contatos incobrindo-a com a mesma mensagem que esta na pagina pos envio de email
-
-          encontrar uma api que me faça receber email e que retorne uma mensagem automatica ao email cadastrado
-          
-  responsividades
-
-  na area de projetos, deixar eles com rolagem lateral ou menores
-  
-  Para os projetos
-    adicionar os links os videos no youtube
   -->
   
     <header class="main-nav">
@@ -75,7 +57,6 @@
             </div>
 
             <div class="btn-group">
-              <!--Adicionar curriculo-->
                 <a href="https://drive.google.com/file/d/1NxR6zHEWhLAn13u-96Nnx0-dR19PQ9I5/view?usp=sharing" class="btn" download title="Baixar PDF" target="_blank">Currículo</a>
                 <a href="#contact" class="btn">Contato</a>
             </div>
@@ -258,10 +239,7 @@
             </div>
           </div>
     </section> 
-    <!--
-      FALTAM para o area de projetos
-      links - para youtube
-      -->
+
     <section id="projects">
       <div class="content-projects">
         <div class="title-projects">
@@ -442,29 +420,29 @@
     </section>
     
     <section id="contact">
-  <h2>Vamos trabalhar juntos?</h2>
-  <div class="form-container" id="formContainer">
-    <div class="form-contact">
-      <form id="contactForm" action="https://api.staticforms.xyz/submit" method="post">
-        <label class="label-contact">Nome</label>
-        <input class="input-contact" type="text" name="name" id="" placeholder="Digite seu nome" autocomplete="on" required>
-        <label class="label-contact">E-mail</label>
-        <input class="input-contact" type="email" name="email" id="" placeholder="Digite seu E-mail" autocomplete="on" required>
-        <label class="label-contact">Mensagem</label>
-        <textarea class="textarea-contact" name="message" cols="30" rows="5" placeholder="Digite sua mensagem" required></textarea>
-        <button class="btn-contact" type="submit">Enviar</button>
+      <h2>Vamos trabalhar juntos?</h2>
+      <div class="form-container" id="formContainer">
+        <div class="form-contact">
+          <form id="contactForm" action="https://api.staticforms.xyz/submit" method="post">
+            <label class="label-contact">Nome</label>
+            <input class="input-contact" type="text" name="name" id="" placeholder="Digite seu nome" autocomplete="on" required>
+            <label class="label-contact">E-mail</label>
+            <input class="input-contact" type="email" name="email" id="" placeholder="Digite seu E-mail" autocomplete="on" required>
+            <label class="label-contact">Mensagem</label>
+            <textarea class="textarea-contact" name="message" cols="30" rows="5" placeholder="Digite sua mensagem" required></textarea>
+            <button class="btn-contact" type="submit">Enviar</button>
 
-        <input type="hidden" name="accessKey" value="648838fb-4ee4-4daf-95b9-9d1ef1dbdda6">
-      </form>
-    </div>
-    
-    <div class="thank-you-message">
-      <h1 class="text">Obrigada pelo contato</h1>
-      <p class="paragraph">Em breve entrarei em contato ;)</p>
-      <a class="btn" href="#" id="backBtn">Voltar</a>
-    </div>
-  </div>
-</section>
+            <input type="hidden" name="accessKey" value="648838fb-4ee4-4daf-95b9-9d1ef1dbdda6">
+          </form>
+        </div>
+        
+        <div class="thank-you-message">
+          <h1 class="text">Obrigada pelo contato</h1>
+          <p class="paragraph">Em breve entrarei em contato ;)</p>
+          <a class="btn" href="#" id="backBtn">Voltar</a>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div class="container-footer">
